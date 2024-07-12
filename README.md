@@ -32,7 +32,7 @@ const { meshes, lines } = clipTool.clip(model);
 ```
 
 ## API
-  * ### Class : ClipPlane`(inherited from maptalks.OverlayLayer)`
+  * ### Class : ClipPlane`(inherited from THREE.Plane)`
     > a layer used to renderering gltf model on map, it manages gltf markers.
     
     #### Method : new ClipPlane(normal, constant) 
@@ -52,6 +52,14 @@ const { meshes, lines } = clipTool.clip(model);
     | Parameter | Type | Default | Description|
     | ------------- |---------- |-------------|--------- |
     | `name`      | String |  | shader's name |
+
+    #### Method : clip(model)
+    _remove a shaclipplaneder from  clip list_
+    | Parameter | Type | Default | Description|
+    | ------------- |---------- |-------------|--------- |
+    | `model`      | String |  | a three 3d object to be clipped |
+    > returns : <br>
+    meshes and lines
 
     #### Method : add(clipplane)
     _get all shaders registed to gltf layer_
